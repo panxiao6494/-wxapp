@@ -1,0 +1,2 @@
+<view>会员页面</view>
+<custom-tab-bar currentIdx='1'></custom-tab-bar>

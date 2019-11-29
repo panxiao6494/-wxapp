@@ -1,0 +1,10 @@
+<view class="tab-bar">
+    <view class="tab-bar-list">
+        <view wx:for="{{list}}" wx:key="{{item.pagePath}}" data-item-idx="{{index}}" data-page-path="{{item.pagePath}}" catchtap="switchTab" style="color: {{index == activeIdx ? '#FFBA41' : '#FFFFFF'}}; order: {{index}};" class="tab-bar-item {{index == 3 ? 'tab-bar-item-4' : ''}}">
+            <view class="tab-bar-item-icon">
+                <image class="bottom-image" binderror="handleError" mode="widthFix" src="{{item.idx === activeIdx ? item.selectedIconPath : item.iconPath}}" />
+            </view>
+            <view class="tab-bar-item-text">{{item.text}}</view>
+        </view>
+    </view>
+</view>

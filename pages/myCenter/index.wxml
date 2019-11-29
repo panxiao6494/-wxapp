@@ -1,0 +1,2 @@
+<view>我的页面</view>
+<custom-tab-bar currentIdx='2'></custom-tab-bar>

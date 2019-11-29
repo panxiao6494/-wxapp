@@ -1,0 +1,167 @@
+page {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #FFBB00 0%, #FFBB00 100%);
+}
+
+.main {
+    padding: 168rpx 25rpx 0;
+}
+
+.back {
+    position: absolute;
+    width: 50rpx;
+    height: 50rpx;
+    top: 60rpx;
+    left: 30rpx;
+    padding: 8rpx;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 50rpx;
+}
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 750rpx;
+    background-color: #FFBB00;
+    height: 160rpx;
+}
+
+.content {
+    background-color: #fff;
+    border-radius: 15rpx;
+}
+
+.order-title {
+    height: 70rpx;
+    line-height: 70rpx;
+    font-size: 35rpx;
+    letter-spacing: 3rpx;
+}
+
+.address-title {
+    height: 80rpx;
+    line-height: 80rpx;
+    border-bottom: 1rpx solid #eee;
+    text-indent: 30rpx;
+}
+
+.order-box {
+    padding: 0 30rpx;
+}
+
+.xiazi {
+    display: flex;
+    margin: 15rpx 0;
+}
+
+.number text {
+    background-color: #FFEFB0;
+    margin-left: 15rpx;
+    padding: 2rpx 6rpx;
+    border-radius: 2rpx;
+    font-size: 26rpx;
+}
+
+.erwei {
+    width: 100%;
+    display: flex;
+}
+
+.erwei .center {
+    width: 400rpx;
+    height: 400rpx;
+    margin: 50rpx auto;
+}
+
+.erwei .erweima {
+    width: 100%;
+    height: 100%;
+}
+
+.vercode {
+    width: 600rpx;
+    height: 90rpx;
+    line-height: 90rpx;
+    text-align: center;
+    margin: 0 auto;
+    border: 1rpx solid #ccc;
+    border-radius: 10rpx;
+}
+
+.circle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 670rpx;
+    height: 1rpx;
+    background-color: #ccc;
+    margin-top: 100rpx;
+    margin-left: -12rpx;
+}
+
+.circle::before {
+    display: block;
+    content: '';
+    height: 40rpx;
+    width: 40rpx;
+    border-radius: 30rpx;
+    background-color: #FFBB00;
+    margin-left: -38rpx;
+}
+
+.circle::after {
+    display: block;
+    content: '';
+    height: 40rpx;
+    width: 40rpx;
+    border-radius: 30rpx;
+    background-color: #FFBB00;
+    margin-right: -38rpx;
+}
+
+.address-details {
+    display: flex;
+    justify-content: space-between;
+    margin: 55rpx 0;
+}
+
+.address {
+    display: flex;
+    width: 86%;
+    flex-direction: column;
+    border-right: 1rpx solid #999;
+}
+
+.map {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.map image {
+    width: 30rpx;
+    height: 35rpx;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 55rpx 0;
+    padding-bottom: 60rpx;
+}
+
+.service image {
+    width: 35rpx;
+    height: 35rpx;
+}
+
+.pngserver {
+    display: flex;
+    width: 70rpx;
+    height: 70rpx;
+    align-items: center;
+    justify-content: center;
+    border-radius: 70rpx;
+}

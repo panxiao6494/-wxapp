@@ -1,0 +1,54 @@
+<view class="main">
+    <view class="topbar">
+        <image src="/image/backIcon.png" class="back" bindtap="backPage" />
+    </view>
+    <view class="content">
+        <view class="address-title">上海长江剧院</view>
+        <view class="order-box">
+            <text class="order-title">小小明日之星总决赛剧票</text>
+            <view>
+                <text style="color: #BD696A">2019年12月15日</text>
+                <text style="color: #BD696A;margin-left: 15rpx">10:30</text>
+            </view>
+            <view class="xiazi">
+                <text>红匣子</text>
+                <block wx:for="{{list}}" wx:key="index">
+                    <view class="number">
+                        <text>{{item}}</text>
+                    </view>
+                </block>
+            </view>
+            <view>总票价240元</view>
+            <view class="erwei">
+                <view class="center">
+                    <image src="/image/erwei.png" class="erweima" />
+                </view>
+            </view>
+            <view class="vercode">验证码: 3662 116</view>
+            <view class="circle">
+            </view>
+            <view class="address-details">
+                <view class="address">
+                    <text>上海长江剧院</text>
+                    <text style="color: #999999">上海市黄浦区黄河路21-8</text>
+                </view>
+                <view class="map">
+                    <image src="/image/address.png" />
+                    <text>地图</text>
+                </view>
+            </view>
+            <view class="circle">
+            </view>
+            <button open-type="contact" session-from="weapp" id="contact" hidden="true"></button>
+            <view class="service">
+                <text>在线客服</text>
+                <label for="contact">
+                    <view hover-class="hoverbg" class="pngserver">
+                        <image src="/image/services.png" />
+                    </view>
+                </label>
+            </view>
+        </view>
+    </view>
+    <map id="map" longitude="121.471011" latitude="31.233789" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location style="width: 100%; height: 300px;"></map>
+</view>

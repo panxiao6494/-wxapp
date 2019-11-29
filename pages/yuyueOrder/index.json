@@ -1,0 +1,8 @@
+{
+    "usingComponents":
+    {
+        "custom-tab-bar": "/component/custom-tab-bar/index"
+    },
+
+    "navigationBarTextStyle": "black"
+}

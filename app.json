@@ -1,0 +1,50 @@
+{
+    "pages": [
+        "pages/index/index",
+        "pages/demo/index",
+        "pages/myCenter/index",
+        "pages/vip/index",
+        "pages/yuyueOrder/index"
+    ],
+    "window":
+    {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "SMG",
+        "navigationBarTextStyle": "black",
+        "navigationStyle": "custom"
+    },
+    "tabBar":
+    {
+        "color": "#FFFFFF",
+        "selectedColor": "#FFBA41",
+        "backgroundColor": "#00B26A",
+        "list": [
+            {
+                "iconPath": "image/tabbar/cardHead.png",
+                "selectedIconPath": "image/tabbar/cardHead.png",
+                "pagePath": "pages/index/index",
+                "text": "首页"
+            },
+
+            {
+                "iconPath": "image/tabbar/paysuccessLogo.png",
+                "selectedIconPath": "image/tabbar/paysuccessLogo.png",
+                "pagePath": "pages/vip/index",
+                "text": "会员中心"
+            },
+            {
+                "iconPath": "image/tabbar/userImg.png",
+                "selectedIconPath": "image/tabbar/userImg.png",
+                "pagePath": "pages/myCenter/index",
+                "text": "我的"
+            }
+        ]
+    },
+    "usingComponents":
+    {
+        "custom-tab-bar": "/component/custom-tab-bar/index"
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
