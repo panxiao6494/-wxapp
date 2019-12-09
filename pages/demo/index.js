@@ -12,14 +12,14 @@ Page({
         scaleArr: [],
         height: 0,
         greenPrice: [
-            [{ num: 29 }, { num: 27 }, { num: 25 }, { num: 23 }, { num: 21 }, { num: 19 }, { num: 17 }, { num: 15 }, { num: 13 }, { num: 11 }, { num: 9 }, { num: 7 }, { num: 5 }, { num: 3 }, { num: 1 }, { num: 2 }, { num: 4 }, { num: 6 }, { num: 8 }, { num: 10 }, { num: 12 }, { num: 14 }, { num: 16 }, { num: 18 }, { num: 20 }, { num: 22 }, { num: 24 }, { num: 26 }, { num: 28 }],
-            [{ num: 29 }, { num: 27 }, { num: 25 }, { num: 23 }, { num: 21 }, { num: 19 }, { num: 17 }, { num: 15 }, { num: 13 }, { num: 11 }, { num: 9 }, { num: 7 }, { num: 5 }, { num: 3 }, { num: 1 }, { num: 2 }, { num: 4 }, { num: 6 }, { num: 8 }, { num: 10 }, { num: 12 }, { num: 14 }, { num: 16 }, { num: 18 }, { num: 20 }, { num: 22 }, { num: 24 }, { num: 26 }, { num: 28 }],
-            [{ num: 25 }, { num: 23 }, { num: 21 }, { num: 19 }, { num: 17 }, { num: 15 }, { num: 13 }, { num: 11 }, { num: 9 }, { num: 7 }, { num: 5 }, { num: 3 }, { num: 1 }, { num: 2 }, { num: 4 }, { num: 6 }, { num: 8 }, { num: 10 }, { num: 12 }, { num: 14 }, { num: 16 }, { num: 18 }, { num: 20 }, { num: 22 }, { num: 24 }],
-            [{ num: 25 }, { num: 23 }, { num: 21 }, { num: 19 }, { num: 17 }, { num: 15 }, { num: 13 }, { num: 11 }, { num: 9 }, { num: 7 }, { num: 5 }, { num: 3 }, { num: 1 }, { num: 2 }, { num: 4 }, { num: 6 }, { num: 8 }, { num: 10 }, { num: 12 }, { num: 14 }, { num: 16 }, { num: 18 }, { num: 20 }, { num: 22 }, { num: 24 }, { num: 26 }],
-            [{ num: 25 }, { num: 23 }, { num: 21 }, { num: 19 }, { num: 17 }, { num: 15 }, { num: 13 }, { num: 11 }, { num: 9 }, { num: 7 }, { num: 5 }, { num: 3 }, { num: 1 }, { num: 2 }, { num: 4 }, { num: 6 }, { num: 8 }, { num: 10 }, { num: 12 }, { num: 14 }, { num: 16 }, { num: 18 }, { num: 20 }, { num: 22 }, { num: 24 }, { num: 26 }],
-            [{ num: 25 }, { num: 23 }, { num: 21 }, { num: 19 }, { num: 17 }, { num: 15 }, { num: 13 }, { num: 11 }, { num: 9 }, { num: 7 }, { num: 5 }, { num: 3 }, { num: 1 }, { num: 2 }, { num: 4 }, { num: 6 }, { num: 8 }, { num: 10 }, { num: 12 }, { num: 14 }, { num: 16 }, { num: 18 }, { num: 20 }, { num: 22 }, { num: 24 }, { num: 26 }],
-            [{ num: 27 }, { num: 25 }, { num: 23 }, { num: 21 }, { num: 19 }, { num: 17 }, { num: 15 }, { num: 13 }, { num: 11 }, { num: 9 }, { num: 7 }, { num: 5 }, { num: 3 }, { num: 1 }, { num: 2 }, { num: 4 }, { num: 6 }, { num: 8 }, { num: 10 }, { num: 12 }, { num: 14 }, { num: 16 }, { num: 18 }, { num: 20 }, { num: 22 }, { num: 24 }, { num: 26 }, { num: 28 }],
-            [{ num: 17 }, { num: 15 }, { num: 13 }, { num: 11 }, { num: 9 }, { num: 7 }, { num: 5 }, { num: 3 }, { num: 1 }, { num: 2 }, { num: 4 }, { num: 6 }, { num: 8 }, { num: 10 }, { num: 12 }, { num: 14 }, { num: 16 }, { num: 18 }]
+            [{num: 29}, {num: 27}, {num: 25}, {num: 23}, {num: 21}, {num: 19}, {num: 17}, {num: 15}, {num: 13}, {num: 11}, {num: 9}, {num: 7}, {num: 5}, {num: 3}, {num: 1}, {num: 2}, {num: 4}, {num: 6}, {num: 8}, {num: 10}, {num: 12}, {num: 14}, {num: 16}, {num: 18}, {num: 20}, {num: 22}, {num: 24}, {num: 26}, {num: 28}],
+            [{num: 29}, {num: 27}, {num: 25}, {num: 23}, {num: 21}, {num: 19}, {num: 17}, {num: 15}, {num: 13}, {num: 11}, {num: 9}, {num: 7}, {num: 5}, {num: 3}, {num: 1}, {num: 2}, {num: 4}, {num: 6}, {num: 8}, {num: 10}, {num: 12}, {num: 14}, {num: 16}, {num: 18}, {num: 20}, {num: 22}, {num: 24}, {num: 26}, {num: 28}],
+            [{num: 25}, {num: 23}, {num: 21}, {num: 19}, {num: 17}, {num: 15}, {num: 13}, {num: 11}, {num: 9}, {num: 7}, {num: 5}, {num: 3}, {num: 1}, {num: 2}, {num: 4}, {num: 6}, {num: 8}, {num: 10}, {num: 12}, {num: 14}, {num: 16}, {num: 18}, {num: 20}, {num: 22}, {num: 24}],
+            [{num: 25}, {num: 23}, {num: 21}, {num: 19}, {num: 17}, {num: 15}, {num: 13}, {num: 11}, {num: 9}, {num: 7}, {num: 5}, {num: 3}, {num: 1}, {num: 2}, {num: 4}, {num: 6}, {num: 8}, {num: 10}, {num: 12}, {num: 14}, {num: 16}, {num: 18}, {num: 20}, {num: 22}, {num: 24}, {num: 26}],
+            [{num: 25}, {num: 23}, {num: 21}, {num: 19}, {num: 17}, {num: 15}, {num: 13}, {num: 11}, {num: 9}, {num: 7}, {num: 5}, {num: 3}, {num: 1}, {num: 2}, {num: 4}, {num: 6}, {num: 8}, {num: 10}, {num: 12}, {num: 14}, {num: 16}, {num: 18}, {num: 20}, {num: 22}, {num: 24}, {num: 26}],
+            [{num: 25}, {num: 23}, {num: 21}, {num: 19}, {num: 17}, {num: 15}, {num: 13}, {num: 11}, {num: 9}, {num: 7}, {num: 5}, {num: 3}, {num: 1}, {num: 2}, {num: 4}, {num: 6}, {num: 8}, {num: 10}, {num: 12}, {num: 14}, {num: 16}, {num: 18}, {num: 20}, {num: 22}, {num: 24}, {num: 26}],
+            [{num: 27}, {num: 25}, {num: 23}, {num: 21}, {num: 19}, {num: 17}, {num: 15}, {num: 13}, {num: 11}, {num: 9}, {num: 7}, {num: 5}, {num: 3}, {num: 1}, {num: 2}, {num: 4}, {num: 6}, {num: 8}, {num: 10}, {num: 12}, {num: 14}, {num: 16}, {num: 18}, {num: 20}, {num: 22}, {num: 24}, {num: 26}, {num: 28}],
+            [{num: 17}, {num: 15}, {num: 13}, {num: 11}, {num: 9}, {num: 7}, {num: 5}, {num: 3}, {num: 1}, {num: 2}, {num: 4}, {num: 6}, {num: 8}, {num: 10}, {num: 12}, {num: 14}, {num: 16}, {num: 18}]
         ],
         idx: null
     },
@@ -94,7 +94,7 @@ Page({
         let that = this;
         var query = wx.createSelectorQuery();
         query.select('.zuowei-box').boundingClientRect()
-        query.exec(function(res) {
+        query.exec(function (res) {
             let height = res[0].height
             that.setData({
                 height: height

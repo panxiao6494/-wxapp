@@ -1,19 +1,19 @@
 <view class="main">
     <view class="topbar">
-        <image src="/image/banner.png" />
+        <image src="/image/banner.png"/>
     </view>
     <view class="stage">
         <text style="font-size: 35rpx">小小明日之星总决赛剧票</text>
         <view class="time">
             <view>
-                <image src="/image/time.png" />
+                <image src="/image/time.png"/>
                 <tetx>12月15号</tetx>
                 <text>10:30</text>
             </view>
             <view class="yuyue" bindtap="toOrder" hover-class="hoverbg">查看我的预约</view>
         </view>
         <view class="address">
-            <image src="/image/address.png" />
+            <image src="/image/address.png"/>
             <tetx>上海长江剧院</tetx>
             <text>红匣子</text>
         </view>
@@ -31,87 +31,124 @@
             <text>8</text>
         </view>
         <movable-area scale-area class="scale-box">
-            <movable-view class="zuowei-bo" direction="horizontal" scale="{{scaleFlag}}" scale-max="2" scale-min="1" scale-value="{{scaleValue}}" bindscale="scaleEvent" bindchange="move" out-of-bounds animation friction="1">
+            <movable-view class="zuowei-bo" direction="horizontal" scale="{{scaleFlag}}" scale-max="2" scale-min="1"
+                          scale-value="{{scaleValue}}" bindscale="scaleEvent" bindchange="move" out-of-bounds animation
+                          friction="1">
                 <view class="left">
                     <view class="zuowei-box">
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==0||keys==1}}">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100" wx:if="{{key<6}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==0||keys==1}}">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100"
+                                  wx:if="{{key<6}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"></image>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==2}}" style="justify-content: flex-end;">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100" wx:if="{{key<4}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==2}}" style="justify-content: flex-end;">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100"
+                                  wx:if="{{key<4}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==3||keys==4||keys==5}}" style="justify-content: flex-start;">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100" wx:if="{{key<5}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==3||keys==4||keys==5}}" style="justify-content: flex-start;">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100"
+                                  wx:if="{{key<5}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==6}}" style="justify-content: flex-start;">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100" wx:if="{{key<6}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==6}}" style="justify-content: flex-start;">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100"
+                                  wx:if="{{key<6}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
                     </view>
                 </view>
                 <view class="center">
                     <view class="zuowei-box">
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==0||keys==1}}">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="120" wx:if="{{key>=6&&key<23}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==0||keys==1}}">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="120"
+                                  wx:if="{{key>=6&&key<23}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==2}}">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="120" wx:if="{{key>=4&&key<21}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==2}}">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="120"
+                                  wx:if="{{key>=4&&key<21}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==3||keys==4||keys==5||keys==6}}">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="120" wx:if="{{key>=6&&key<21}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==3||keys==4||keys==5||keys==6}}">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="120"
+                                  wx:if="{{key>=6&&key<21}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==7}}">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="120">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==7}}">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="120">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
                     </view>
                 </view>
                 <view class="right">
                     <view class="zuowei-box">
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==0||keys==1}}">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100" wx:if="{{key>=23}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==0||keys==1}}">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100"
+                                  wx:if="{{key>=23}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==2}}" style="justify-content: flex-start;">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100" wx:if="{{key>=21}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==2}}" style="justify-content: flex-start;">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100"
+                                  wx:if="{{key>=21}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==3||keys==4||keys==5}}" style="justify-content: flex-end;">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100" wx:if="{{key>=21}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==3||keys==4||keys==5}}" style="justify-content: flex-end;">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100"
+                                  wx:if="{{key>=21}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
-                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items" wx:if="{{keys==6}}">
-                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item" bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100" wx:if="{{key>=22}}">
-                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}" />
-                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}" />
+                        <view wx:for="{{greenPrice}}" wx:key wx:for-index="keys" class="zuowei" wx:for-item="items"
+                              wx:if="{{keys==6}}">
+                            <view wx:for="{{items}}" wx:key wx:for-index="key" wx:for-item="item" class="item"
+                                  bindtap="tap" data-row="{{keys}}" data-col="{{key}}" data-price="100"
+                                  wx:if="{{key>=22}}">
+                                <image src="/image/zuowei1.png" wx:if="{{!item.chooseFlag}}"/>
+                                <image src="/image/yixuan.png" wx:if="{{item.chooseFlag}}"/>
                             </view>
                         </view>
                     </view>
@@ -120,15 +157,15 @@
         </movable-area>
         <view class="seat-state">
             <view>
-                <image src="/image/zuowei1.png" />
+                <image src="/image/zuowei1.png"/>
                 <text>可选</text>
             </view>
             <view>
-                <image src="/image/yiyuyue.png" />
+                <image src="/image/yiyuyue.png"/>
                 <text>已预约</text>
             </view>
             <view>
-                <image src="/image/yixuan.png" />
+                <image src="/image/yixuan.png"/>
                 <text>已选</text>
             </view>
         </view>
@@ -139,7 +176,7 @@
             <view class="select-seat" wx:for="{{selectList}}" wx:key="index">
                 <text>{{item.x}}排{{item.y}}座</text>
                 <view class="close" bindtap="delete" data-index="{{index}}">
-                    <image src="/image/close.png" />
+                    <image src="/image/close.png"/>
                 </view>
             </view>
         </view>
@@ -148,7 +185,9 @@
         <text wx:if="{{selectList.length==0}}">未选择座位</text>
         <text class="text-r" wx:if="{{selectList.length==0}}">请先选座</text>
         <view wx:if="{{selectList.length>0}}" class="price-box">
-            <text style="color: #F3562E;font-size: 44rpx">{{totalPrice}}<text style="font-size: 38rpx">元</text></text>
+            <text style="color: #F3562E;font-size: 44rpx">{{totalPrice}}
+                <text style="font-size: 38rpx">元</text>
+            </text>
             <text>120*1</text>
         </view>
         <text class="text-r text-s" wx:if="{{selectList.length>0}}">确认选座</text>

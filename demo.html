@@ -1,35 +1,86 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<style type="text/css">
-.box {
-    display: flex;
-    background-color: pink;
-}
+    <meta charset="utf-8">
+    <title>无标题文档</title>
+    <style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
 
-.red {
-    width: 100px;
-    height: 80px;
-    background-color: #474747;
-    margin-top: 5px;}
-</style>
+    ul {
+        list-style: none;
+    }
+
+    .head {
+        height: 499px;
+        background: url("images/wx.jpg") repeat-x;
+    }
+
+    .head nav {
+        width: 1190px;
+        height: 75px;
+        /*          border: 1px solid #F31418;*/
+        margin: 0 auto;
+    }
+
+    .head nav img {
+        height: 50px;
+        margin-top: 13px;
+        margin-right: 100px;
+    }
+
+    .head nav li {
+        float: left;
+    }
+
+    .head nav li .s2 {
+        color: azure;
+        text-decoration: none;
+        display: block;
+        height: 33px;
+        background: url("images/tu.png") no-repeat;
+        line-height: 33px;
+        padding-left: 15px;
+        margin-top: 21px;
+        margin-right: 10px;
+        font-size: 15px;
+    }
+
+    .head nav li span {
+        display: block;
+        background: url("images/tu.png") no-repeat right;
+        padding-right: 15px;
+    }
+
+    .head nav li .s2:hover {
+        background: url("images/ao.png") no-repeat;
+    }
+
+    .head nav li span:hover {
+        background: url("images/tu.png") no-repeat right;
+    }
+    </style>
+</head>
 
 <body>
-    <div class="box">
-        <div class="left">
-            <p>12313</p>
-            <p>413425</p>
-            <p>631414</p>
-        </div>
-        <div class="right">
-            <div class="red"></div>
-            <div class="red"></div>
-            <div class="red"></div>
-        </div>
+    <div class="head">
+        <nav>
+            <ul>
+                <li><a href="#" class="s1"><img src="微信.png" alt=""></a></li>
+                <li><a href="#" class="s2"><span>首页</span></a></li>
+                <li><a href="#" class="s2"><span>帮助与反馈</span></a></li>
+                <li><a href="#" class="s2"><span>公众平台</span></a></li>
+                <li><a href="#" class="s2"><span>开放平台</span></a></li>
+                <li><a href="#" class="s2"><span>微信支付</span></a></li>
+                <li><a href="#" class="s2"><span>微信广告</span></a></li>
+                <li><a href="#" class="s2"><span>企业微信</span></a></li>
+                <li><a href="#" class="s2"><span>表情开发平台</span></a></li>
+                <li><a href="#" class="s2"><span>微信网页版</span></a></li>
+            </ul>
+        </nav>
     </div>
 </body>
 
